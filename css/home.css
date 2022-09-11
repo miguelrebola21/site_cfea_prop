@@ -1,0 +1,408 @@
+.header {
+	height: 95px;
+	width:  calc(100% - 20vw);
+	position: sticky;
+	top:  0;
+	left:  0;
+	padding: 0 10vw;
+	box-shadow: 0px 4px 5px #0000002e;
+	background: white;
+	z-index: 99;
+}
+
+.preheader {
+	height: 45px;
+	background-color: #ffc23b;
+	width:  calc(100% - 20vw);
+		padding: 0 10vw;
+}
+
+.logo {
+    height: 140px;
+    position: absolute;
+    width: 107px;
+    top: -22.5px;
+    z-index: 999;
+    transition: all 0.5s;
+}
+
+.fc-h-event {
+	background-color: transparent !important;
+    border: none !important;
+    height: 50px;
+    width: 50px;
+    position: absolute !important;
+    top: -22.5px;
+    cursor: pointer;
+}
+
+.feirense {
+	background-image:  url('../assets/feirense.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.braga {
+	background-image:  url('../assets/braga.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.mafra {
+	background-image:  url('../assets/mafra.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.fc-h-event:after {
+	bottom: 0;
+	right: -20px;
+	height: 20px;
+	width: 20px;
+	position: absolute;
+}
+
+.newsgrid {
+	display: flex !important;
+	flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.newsgrid .body .title {
+	font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.newsgrid .body {
+	position: absolute;
+    bottom: 0;
+    padding: 20px;
+    background: #1212127d;
+    color: white;
+}
+
+.newsgrid .news {
+	width: 50%;
+	height: 50%;
+	position: relative;
+	background-image: url("../assets/1.jpeg");
+	background-size:  cover;
+	box-shadow: 0px 0px 1px #000 inset;
+}
+
+.newsgrid .news .glass {
+background: rgba(0, 0, 0, 0.27);
+border-radius: 0;
+backdrop-filter: blur(2.4px);
+-webkit-backdrop-filter: blur(2.4px);
+height: 100%;
+width: 100%;
+position: absolute;
+transition: all 0.5s;
+}
+
+.newsgrid .news:hover .glass {
+background: rgba(0, 0, 0, 0.4);
+}
+
+
+.futebol:after {
+	content:  '';
+	background-image:  url('../assets/soccer.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.beach:after {
+	content:  '';
+	background-image:  url('../assets/beach.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.andebol:after {
+	content:  '';
+	background-image:  url('../assets/andebol.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.logo.min {
+	height: 88px;
+    position: absolute;
+    width: 67px;
+    top: 3.5px;
+}
+
+.logo svg {
+	width: 100%;
+	height: 100%;
+}
+
+.menu {
+	float: right;
+}
+
+#calendar {
+	margin: 10%;
+    width: 80%;
+    height: 70%;
+}
+
+.menu li {
+	display: inline-block;
+	height: 100%;
+	line-height: 95px;
+	text-transform: uppercase;
+	min-width: 100px;
+	padding: 0 20px;
+	text-align: center;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.menu li ul {
+	display:  none;
+	position: absolute;
+    left: 0;
+    width: calc(100% - 20vw);
+    padding: 0 10vw;
+    text-align: right;
+    background: #ca392c;
+    color:  white;
+    filter: saturate(0.7);
+    	box-shadow: 0px 4px 5px #0000002e;
+
+}
+
+.userArea {
+	padding: 0 10px;
+	background: white;
+	float: right;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: black;
+	border-radius: 5px;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 25px;
+	margin-top: 10px;
+	margin-right: 20px;
+	box-shadow: 0px 0px 5px #0000002e;
+}
+
+.store {
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 95px;
+	background: #fffcfc;
+	left: 90vw;
+	border-left: 1px solid #fffcfc;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	color: white;
+	background: rgb(50 96 56 / 74%);
+	cursor: pointer;
+}
+
+.store:after {
+    content: 'Loja Tricolor';
+    width: 50%;
+    position: absolute;
+    font-size: 33px;
+    font-weight: 700;
+    transform: rotate(-20deg);
+    top: 16px;
+    left: 4px;
+}
+
+
+.menu li:hover {
+	background: #cccccc42;
+}
+
+.menu li:hover ul {
+	display: block;
+}
+
+html {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+.arrow {
+  position: absolute;
+bottom: 12px;
+right: 9px;
+width: 45px;
+height: 10px;
+  background-color: white;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+  animation: arrow 700ms linear infinite;
+  transition: all 0.4s;
+}
+
+.store:hover .arrow {
+  	right: 5px;
+}
+
+
+.arrow::after, .arrow::before {
+  content: '';
+  position: absolute;
+  width: 60%;
+  height: 10px;
+  right: -8px;
+  background-color: white;
+}
+
+.arrow::after {
+  top: -6px;
+  transform: rotate(45deg);
+}
+
+.banner {
+	width: 100vw;
+	height: auto;
+}
+
+.section {
+	width: 100%;
+	height: 500px;
+	margin-top: -3px;
+}
+
+.section.partners {
+	text-align: center;
+}
+
+.section.partners ul {
+    width: 100%;
+    height: 230px;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.section.partners .btn {
+	text-decoration: none;
+    color: white;
+    padding: 12px;
+    background: #a72222;
+    font-size: 19px;
+    margin: 0 auto;
+}
+
+.section.partners li {
+	width: 25%;
+	height: 100%;
+	background: url(../assets/laca.png);
+	background-size:  contain;
+	background-repeat: no-repeat;
+	background-size: 70%;
+	background-position: center;
+}
+
+.section.partners li:nth-child(odd) {
+	background-image: url(../assets/prego.png);
+}
+
+
+
+.section.med {
+	height: 300px;
+}
+
+.section .col {
+	display: inline-block;
+	height: 100%;
+	width: 50%;
+	float: left;
+}
+
+.section  h3 {
+	    width: 50%;
+    font-size: 50px;
+    font-weight: 700;
+    padding-top: 10vw;
+    margin-left: 10vw;
+    border-bottom: 5px solid white;
+    padding-bottom: 17px;
+}
+
+.section.socio:hover {
+	background: rgb(50 96 56 / 74%);
+}
+
+.section.socio {
+	background: rgb(50 96 56 / 90%);
+	transition: all 0.5s;
+	cursor: pointer;
+}
+
+.section.socio h3 {
+	padding: 0;
+    padding-top: 100px;
+    text-align: center;
+    width: calc(100% - 20vw);
+}
+
+.section h4 {
+	text-align: center;
+	width: 50%;
+    font-size: 50px;
+    font-weight: 700;
+    padding-top: 6vw;
+    margin-left: 10vw;
+    border-bottom: 5px solid black;
+    padding-bottom: 17px;
+    width: calc(100% - 20vw);
+}
+
+.section.socials svg {
+	height: 60%;
+	width: auto;
+	margin: 10px 5px;
+	transition: all 0.5s;
+	cursor: pointer;
+	transform: scale(1);
+}
+
+.section.socials svg:hover {
+	transform: scale(1.1);
+}
+
+.section.socials {
+	height: 60px;
+	background: #ffc23b;
+	text-align: center;
+}
+
+.section.socio h5 {
+    padding-top: 20px;
+    font-size:  23px;
+    text-align: center;
+}
+
+.section .col.red {
+	background: #ca392c;
+	color:  white;
+}
+
+.section .col.green {
+	background: rgb(50 96 56 / 100%);
+	color:  white;
+}
+
+.banner img {
+	width: 100%;
+	height: auto;
+}
+
+.arrow::before {
+  top: 7px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+  transform: rotate(-45deg);
+}
