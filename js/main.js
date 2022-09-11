@@ -14,17 +14,17 @@ var calendar = new FullCalendar.Calendar(calendarEl, {
     {
       title  : '',
       className: 'feirense futebol',
-      start  : '2022-08-15'
+      start  : '2022-09-15'
     },
     {
       title  : '',
       className: 'mafra andebol',
-      start  : '2022-08-20'
+      start  : '2022-09-20'
     },
     {
       title  : '',
       className: 'braga beach',
-      start    : '2022-08-26'
+      start    : '2022-09-26'
     }
   ]
 });
